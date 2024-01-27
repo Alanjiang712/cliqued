@@ -10,7 +10,7 @@ class CustomUser(AbstractUser):
     useravatar = models.ImageField(upload_to='useravatars/', null=True, blank=True)
     
     # UID UUIDField
-    uid = models.UUIDField(default=uuid.uuid4, unique=True)
+    # uid = models.UUIDField(default=uuid.uuid4, unique=True)
 
     # 个人信息
     age = models.PositiveIntegerField(null=True, blank=True)
