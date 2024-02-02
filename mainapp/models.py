@@ -36,7 +36,7 @@ class HabitTracking(models.Model):
         ('Missed', 'Missed'),
     )
     picture = models.ImageField(
-        upload_to='habit_pictures/', blank=True, null=True)
+        upload_to='diaryimages/', blank=True, null=True)
 
     def __str__(self):
         return f"{self.habit.habit_title} on {self.date}"
