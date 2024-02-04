@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn cliqued.wsgi
+web: python dev_initial.py && python manage.py migrate && gunicorn cliqued.wsgi

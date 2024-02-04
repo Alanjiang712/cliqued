@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # 加载当前目录下的 .env 文件
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-load_dotenv(dotenv_path)
+# dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+# load_dotenv(dotenv_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,7 +30,7 @@ CSRF_TRUSTED_ORIGINS = ['https://cliqued-production.up.railway.app']
 SECRET_KEY = 'django-insecure-4og#kgqj4g*6@6pe%7lkrv@l#(5m@escui2j!glyn@erzx!hnb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', False)
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
